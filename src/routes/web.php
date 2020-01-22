@@ -20,3 +20,6 @@ Route::post('contact', function(){
 		Route::resource('/admin/users','UserController');		
 		Route::resource('/admin/roles','RoleController');
     });
+    Route::group(['namespace' => 'App\Http\Controllers', 'middleware' => ['web']], function(){
+		Route::resource('/admin','DashboardController');
+    });

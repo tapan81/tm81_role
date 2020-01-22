@@ -9,3 +9,9 @@
 5. Run " php artisan db:seed --class=tapanmandal81\tm81_role\Database\seeds\PermissionsTableSeeder" command
 
 6. Now check  "admin/roles" or "admin/users"
+
+7. Create dashboard resource controller by command "php artisan make:controller DashboardController --resource"
+
+
+
+Thanks
