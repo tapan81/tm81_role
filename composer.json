@@ -1,0 +1,14 @@
+{
+	"name": "tapanmandal81/tm81_role",
+	"description": "This is package for role & permission. Also user registration process is also included in this package",
+	"authors": [{
+		"name": "Tapan Mandal",
+		"email": "tapanm@spaatech.net"
+	}],
+	"require": {},
+	"autoload": {
+		"psr-4": {
+			"tapanmandal81\\tm81_role\\": "src/"
+		}
+	}
+}
