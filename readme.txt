@@ -1,3 +1,5 @@
+Install My package:
+
 1. To download, open commnad promt & paste "composer require tapanmandal81/tm81_role", then press enter.
 
 2. Add Service provide tapanmandal81\tm81_role\RolePermissionServiceProvider::class, to config/app.php
@@ -11,7 +13,9 @@
 6. Now check  "admin/roles" or "admin/users"
 
 7. Create dashboard resource controller by command "php artisan make:controller DashboardController --resource"
-
-
-
 Thanks
+
+
+Uninstall My package:
+
+composer remove tapanmandal81/tm81_role

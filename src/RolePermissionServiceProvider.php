@@ -13,11 +13,17 @@ class RolePermissionServiceProvider extends ServiceProvider {
 		$this->loadMigrationsFrom(__DIR__.'/Database/migrations');
 		$this->loadMigrationsFrom(__DIR__.'/Database/seeds');
 
+	$this->publishes([
+			__DIR__ . '/config/extra_user_fields.php' => config_path('extra_user_fields.php'),
+		]);
+
 	}
 
 	public function register()
 	{
-		//echo "Hi3";
+		$this->mergeConfigFrom(
+			__DIR__ . '/config/extra_user_fields.php', 'tm81_role-extra_user_fields'
+		);
 	}
 }
 ?>

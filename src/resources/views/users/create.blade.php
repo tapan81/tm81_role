@@ -81,8 +81,10 @@
                 @php 
                   $extra_fields_array[]='User_Mobile_Number';
                   $extra_fields_array[]='User_Current_Address'; 
-                      
+                  //print_r($extra_fields_array);
+                  $extra_fields_array=Config::get('tm81_role-extra_user_fields.extra_fields_array');
                 @endphp
+                
                 @foreach($extra_fields_array as $field)
                 <div class="form-group">
                     <label for="name" >{{ str_replace('_',' ', $field)  }}</label>
